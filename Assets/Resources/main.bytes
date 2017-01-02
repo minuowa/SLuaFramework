@@ -1,0 +1,16 @@
+function main(  )
+    print("SLUA++++++++++++")
+    PrintMemoryCount("OnOpenLua")
+    -- require("ItemBase")
+end
+
+
+function OnCloseLua(  )
+    PrintMemoryCount("OnCloseLua")
+end
+
+function PrintMemoryCount( tag )
+	collectgarbage("collect")
+	local cnt=collectgarbage("count")
+	print(tag,cnt)
+end

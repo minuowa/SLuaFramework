@@ -1,0 +1,11 @@
+module(..., package.seeall);
+local Count=1
+function _M:Awake(  )
+    print("Awake",_NAME)
+    self.count=Count
+    Count=Count+1
+    print("meta",getmetatable(self,"__index"),_M)
+end
+function _M:Start(  )
+    print("self.count",_M,self,self.count)
+end

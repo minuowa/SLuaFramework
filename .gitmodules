@@ -1,0 +1,3 @@
+[submodule "build/MinGW"]
+	path = build/MinGW
+	url = https://github.com/luzexi/MinGW.git
