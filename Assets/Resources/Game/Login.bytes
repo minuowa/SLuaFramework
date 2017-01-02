@@ -4,7 +4,7 @@ function _M:Awake(  )
     print("Awake",_NAME)
     self.count=Count
     Count=Count+1
-    print("meta",getmetatable(self,"__index"),_M)
+    print("meta",getmetatable(self),_M)
 end
 function _M:Start(  )
     print("self.count",_M,self,self.count)

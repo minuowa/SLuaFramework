@@ -9,7 +9,7 @@ using UnityEngine;
 public class LuaManager : IManager
 {
     public string Entry = "main";
-    public string[] WorkDirectorices = new string[] { string.Empty, "Game" };
+    public string[] WorkDirectorices = new string[] { /*string.Empty,*/ "Game" };
 
     public LuaManager() { Instance = this; }
     public static LuaManager Instance { private set; get; }

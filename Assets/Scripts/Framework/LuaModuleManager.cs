@@ -49,8 +49,8 @@ public class LuaModuleManager
         if (moduleTable == null)
             return null;
 
-        moduleTable["__index"] = (LuaFunction)mState["ScriptGet"];
-        ToLuaHelper.SetMetaTable(moduleTable, moduleTable);
+        //moduleTable["__index"] = (LuaFunction)mState["ScriptGet"];
+        //ToLuaHelper.SetMetaTable(moduleTable, moduleTable);
 
         module = new LuaModule(moduleName, moduleTable);
 
